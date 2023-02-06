@@ -1,64 +1,36 @@
 {
-  "id": "gladiators-of-absalom",
-  "title": "Gladiators of Absalom",
-  "description": "A collection of shared content.",
-  "version": "1.0.0",
-  "authors": [
-      {
-          "name": "Zak Kunath",
-          "email": "zkunath@gmail.com"
-      }
-  ],
-  "compatibility": {
-      "minimum": "10",
-      "verified": "10"
-  },
-  "packs": [
-    {
-      "name": "gladiators-of-absalom-creatures",
-      "label": "GoA Creatures",
-      "path": "./packs/creatures.db",
-      "entity": "Actor",
-      "system": "pf2e"
+    "id": "gladiators-of-absalom",
+    "version": "1.0.0",
+    "title": "Gladiators of Absalom",
+     "description": "A collection of shared content.",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10",
+        "maximum": "10"
     },
-    {
-      "name": "gladiators-of-absalom-items",
-      "label": "GoA Items",
-      "path": "./packs/items.db",
-      "entity": "Item",
-      "system": "pf2e"
-    },
-    {
-      "name": "gladiators-of-absalom-scenes",
-      "label": "GoA Scenes",
-      "path": "./packs/scenes.db",
-      "entity": "Scene"
-    },
-    {
-      "name": "gladiators-of-absalom-journal-entries",
-      "label": "GoA Journal Entries",
-      "path": "./packs/journal-entries.db",
-      "entity": "JournalEntry"
-    },
-    {
-      "name": "gladiators-of-absalom-macros",
-      "label": "GoA Macros",
-      "path": "./packs/macros.db",
-      "entity": "Macro"
-    },
-    {
-      "name": "gladiators-of-absalom-roll-tables",
-      "label": "GoA Roll Tables",
-      "path": "./packs/roll-tables.db",
-      "entity": "RollTable"
-    },
-    {
-      "name": "gladiators-of-absalom-playlists",
-      "label": "GoA Playlists",
-      "path": "./packs/playlists.db",
-      "entity": "Playlist"
+    "manifest": "https://github.com/zkunath/foundry/blob/main/gladiators-of-absalom-module.json",
+    "authors": [
+        {
+            "name": "Zak Kunath",
+            "email": "zkunath@gmail.com"
+        },
+    ],
+    "packs": [
+        {
+            "name": "adventures",
+            "label": "Gladiators of Absalom",
+            "path": "packs/adventures.db",
+            "type": "Adventure"
+        }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "compatibility": {
+                    "minimum": "4.0.0"
+                }
+            }
+        ]
     }
-  ],
-  "manifest": "https://github.com/zkunath/foundry/blob/main/gladiators-of-absalom-module.json",
-  "download": "https://github.com/zkunath/foundry/blob/main/gladiators-of-absalom-content.zip"
 }
