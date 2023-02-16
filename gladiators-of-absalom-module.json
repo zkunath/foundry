@@ -1,36 +1,33 @@
 {
-    "id": "gladiators-of-absalom",
-    "version": "1.0.0",
+    "name": "gladiators-of-absalom",
     "title": "Gladiators of Absalom",
-     "description": "A collection of shared content.",
-    "compatibility": {
-        "minimum": "10",
-        "verified": "10",
-        "maximum": "10"
-    },
-    "manifest": "https://github.com/zkunath/foundry/blob/main/gladiators-of-absalom-module.json",
-    "authors": [
-        {
-            "name": "Zak Kunath",
-            "email": "zkunath@gmail.com"
-        },
-    ],
+    "author": "Zak Kunath",
+    "description": "A collection of shared content.",
     "packs": [
         {
-            "name": "adventures",
+            "name": "gladiators-of-absalom",
             "label": "Gladiators of Absalom",
-            "path": "packs/adventures.db",
-            "type": "Adventure"
+            "type": "Adventure",
+            "system": "pf2e",
+            "path": "packs/gladiators-of-absalom.db",
+            "entity": "Adventure",
+            "module": "gladiators-of-absalom"
         }
     ],
-    "relationships": {
-        "systems": [
-            {
-                "id": "pf2e",
-                "compatibility": {
-                    "minimum": "4.0.0"
-                }
-            }
-        ]
-    }
+    "id": "gladiators-of-absalom",
+    "authors": [
+        {
+            "name": "Zak Kunath"
+        }
+    ],
+	"styles": [
+		"styles/pf2e-bb.css"
+	],
+    "minimumCoreVersion": "0.8.0",
+    "compatibleCoreVersion": "9",
+    "compatibility": {
+        "minimum": 9,
+        "verified": 10
+    },
+    "version": "1.1"
 }
